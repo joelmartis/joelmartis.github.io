@@ -82,14 +82,13 @@ main > div > aside {
     padding-left: 2em !important;
 }
 
-/* uncomment this if you want to center the social media icons:
+
 main > div > aside > div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-*/
 
 main aside ul {
     margin-top: 1em;
