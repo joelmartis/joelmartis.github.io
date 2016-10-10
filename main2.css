@@ -66,37 +66,18 @@ main {
     overflow: hidden;
 }
 
-main > div {
-    display: flex;
-    justify-content: space-between;
+main div {
+    width: 100%;
+    float: left;
 }
 
-main > div > section {
-    width: 70%;
-    overflow-y: auto;
+main aside {
+    width: 0%;
+    float: right;
 }
-
-main > div > aside {
-    width: 28%;
-    margin-bottom: 1em;
-    padding-left: 2em !important;
-}
-
-/* uncomment this if you want to center the social media icons:
-main > div > aside > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-*/
 
 main aside ul {
     margin-top: 1em;
-}
-
-main:nth-child(2) {
-    clear: both;
 }
 
 section {
@@ -120,14 +101,12 @@ footer {
 
 #profile {
     display: flex;
+    flex-direction: row-reverse;
+    overflow-y: auto;
 }
 
 #profile ul {
     flex: 1;
-}
-
-.social-media:first-of-type {
-    margin-top: 1em;
 }
 
 /* Classes */
@@ -146,22 +125,6 @@ ul.not-list {
     background-color: #939393;
 }
 
-.social-media img {
-    width: 3em;
-    height: 3em;
-    margin-left: 0.5em;
-}
-
-@keyframes fadein {
-    from { opacity: 0.2; }
-    to   { opacity: 1; }
-}
-
-.social-media a:hover {
-    background-color: transparent;
-    animation: fadein 1.5s;
-}
-
 /* Responsive */
 
 @media only screen and (min-width: 150px) and (max-width: 640px)
@@ -178,25 +141,14 @@ ul.not-list {
         width: 100%;
     }
 
-    main > div {
-        display: block;
-    }
-
-    main > div > section {
+    main div {
+        float: none;
         width: 100%;
     }
 
-    main > div > aside {
+    main aside {
+        float: none;
         width: 100%;
-        padding-left: 5% !important;
-    }
-
-    main > div > aside > div {
-        display: block;
-    }
-
-    .social-media {
-        display: inline-block;
     }
 
     #profile {

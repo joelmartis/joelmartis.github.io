@@ -3,38 +3,39 @@
 <head>
     <meta charset="utf-8">
     <title>Joel Martis - Research</title>
-    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main2.css">
 </head>
 <body>
+    <h1>Joel Martis</h1>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="research.html">Research</a></li>
             <li><a href="academics.html">Academics</a></li>
             <li><a href="cv.html">CV</a></li>
-            <li><a href="extracurricular.html">Extracurricular</a></li>
+            <li><a href="ana.html">Achievements & Awards</a></li>
+            <li><a href="extracurricular.html">Extracurriculars</a></li>
         </ul>
     </nav>
-    <section>
-        <h2>Research</h2>
-        <p>My interests lie in complexity theory and my current projects span approximation algorithms and hardness of approximation, coding theory and analysis of boolean functions. Below are the problems I have worked on. Please feel free to contact me if you have any interesting ideas, or would just like to know more about these problems.</p>
-        <h3>On the Senstivity Conjecture for kth Order Moments</h3>
-        <p>In this internship, I am working with <a href="https://www.microsoft.com/en-us/research/people/satya/">Dr. Satya Lokam</a> on the sensitivity conjecture. The degree of a binary function is the degree of the unique polynomial representing it in the Fourier basis, while its sensitivity is the maximum degree of the graph when represented on the boolean hypercube. The sensitivity of a function is upper bounded by a polynomial in its degree. In 1992, Nisan and Szegedy <a href="http://rd.springer.com/article/10.1007%2FBF01263419#page-1">conjectured</a> that there also exists a polynomial relation relating the analytic and the combinatorial notions, and this problem is open ever since. This problem is interesting because degree is polynomially related to a variety of other important complexity measures like decision tree depth, approximate degree, certificate complexity, influence moment, etc. </p>
+    <main>
+        <section class="box">
+            <h2>Research</h2>
+            <p>My research interests lie in (1) Heat transfer and fluid mechanics, particularly in granular systems (2) Physics of granular media and (3) Phase field modelling. I've worked (and am working on) on a number of projects in these areas, as mentioned below. Feel free to contact me if you want more information or have intresting ideas to share.</p>
+            <h3>Heat Transfer in a Granular Medium</h3>
+            <p>Granular assemblies are found in plenty, both in nature and in the industry. In fact, they are the second most common 'phase' handled in industries (after water)! This makes understanding their behaviour and rheology absolutely imperative. I was introduced to granular media by Prof. Ratna Kumar at the beginning of my 3rd year, somewhere around August 2015. Initially, I studied the structure of a packed bed of monodisperse pebbles when poured into a container, with the help of a Discrete Element Method (DEM) engine called LIGGGHTS. Soon, my interest in heat transfer led me to investigate heat transfer in a packed bed. While simulating (effective) one dimensional conduction through a packed bed, I was surprised to see that it behaved exactly like a solid rod, albeit with a different thermal conductivity. Batchelor and O'Brien had performed an analysis on the effective thermal conductivity of a packed bed, and had come up with an expression for an isotropic system. I theoretically derived a similar expression for relating the effective thermal conductivity to various parameters that characterized the random arrangement, such as packing fraction, contact radius, coordination number etc. It was truly satisfying to see my formula work and yield very good matches with simulation. I will be presenting my work  at the Second International Conference on Powders, Granules and Bulk Solids, which is going to be held between December 1st to 3rd 2016, in Jaipur, India.</p>
 
-        <p><a href="https://arxiv.org/abs/1604.07432">Recent results</a> try to explore a robust version of the conjecture and the effort is in bounding the influence moments by a sufficiently high moment of sensitivity. We are trying to extend this approach to get better bounds on the depth of the decision tree computing the function, among other things.</p>
+             <h3>Dendritic Growth of Poly-Ethylene Oxide (PEO) on a 2D Mesoscale Lattice</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec euismod diam. Cras sed commodo ligula. Donec interdum urna quis ipsum tempor, vitae molestie purus condimentum. Curabitur enim ex, posuere sit amet lectus sit amet, vestibulum ullamcorper arcu. Aliquam et interdum arcu. Maecenas vulputate dapibus elementum. Vivamus porta congue aliquet. Nam vitae facilisis magna. Vivamus eget lectus quis turpis consequat condimentum. Quisque a fringilla libero, vitae aliquet ex. Nullam non ipsum ac ex porta auctor.</p>
 
-         <h3>A Brief Study of Codes that Achieve Capacity on Symmetric Channels</h3>
-         <p>Claude Shannon introduced the notion of a channel to model real world transmission of messages and proved a lower bound on the amount of redundancy that needs to be added to a code to make sure we can decode it correctly. He also showed that there exists a code which achieves this goal, using probabilistic arguments.</p>
-         
-         <p>Efficiently decodable deterministic coding schemes had been elusive until 2008, when Arikan came up with his landmark <a href="https://arxiv.org/abs/0807.3917">polar coding scheme</a>. Following this, <a href="http://arxiv.org/abs/1304.4321">Guruswami et. al</a> improved the speed of polarization via analysis which does not rely on the martingale convergence theorem which Arikan did in his paper. </p>
-         <p>It has been a long standing open question whether Reed Muller codes achieve capacity in the constant rate regime. As recent as STOC 2016, <a href="http://arxiv.org/abs/1601.04689">Kudekar et. al</a> and <a href="http://arxiv.org/abs/1505.05123">Kumar et. al</a> independently showed that they indeed do so. A brief <a href="http://arxiv.org/abs/1510.01439" target="_blank">survey</a> of the area focussing on the aforementioned results was done, as part of the Visiting Students Research Program, TIFR, under the guidance of <a href="http://www.tcs.tifr.res.in/~prahladh/">Prof. Prahladh Harsha</a>. I would like to take this forward and continue working on combinatorial aspects of RM codes.</p>
+            <h3>Heat Transfer Studies in Rotating Heat Sinks</h3>
 
-        <h3>The Sum of Squares Hierarchy and its Connections to Approximation Algorithms</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec euismod diam. Cras sed commodo ligula. Donec interdum urna quis ipsum tempor, vitae molestie purus condimentum. Curabitur enim ex, posuere sit amet lectus sit amet, vestibulum ullamcorper arcu. Aliquam et interdum arcu. Maecenas vulputate dapibus elementum. Vivamus porta congue aliquet. Nam vitae facilisis magna. Vivamus eget lectus quis turpis consequat condimentum. Quisque a fringilla libero, vitae aliquet ex. Nullam non ipsum ac ex porta auctor.</p>
 
-        <p> Approximation algorithms for NP-hard problems try to relax integer programs, and the effort is in rounding the solutions intelligently. <a href="http://www-math.mit.edu/~goemans/PAPERS/maxcut-jacm.pdf">Goemans and Williamson</a> demonstrated how lifting the problem into a higher dimension of semidefinite matrices and rounding the SDP by projecting the solutions down helps get better approxmation guarantees. The Pablo-Lasserre <a href="http://www.boazbarak.org/sos/prev/">Sum of Squares</a> hierarchy of relaxations tries to generalize this and the approximation guarantees for the first couple of levels of SoS matches the best known till date. It is thus a promising candidate as a meta algorithm which would give optimal gurantees for a variety of problems, not to mention that it also acts as a refutation scheme. In this reading project, I studied the SoS method applied to problems like MAXCUT, sparsest cut, sparse vector recovery, etc. under the guidance of <a href="http://www.tcs.tifr.res.in/~prahladh/">Prof. Prahladh Harsha</a>. I am currently working on SoS as part of my senior thesis, with <a href="http://www.ee.iitm.ac.in/~rganti/"> Prof. Radhakrishna Ganti</a>.</p>
-
-        <h3>Development of Distributed Algorithms for Dispersion of Robots</h3>
-        <p>Load balancing is an important problem in distributed computing which has enormous applications in practice. The problem is about minimizing the requests that each server is required to process at any given moment, in an online sense. I worked towards getting deterministic algorithms for the offline version of the problem, in which requests can be thought of as agents traversing the underlying graph which connects the servers, under the guidance of <a href="https://sites.google.com/site/augustineiitm/">Prof. John Augustine</a>.</p>
-    </section>
+            <h3>Phase Field Modelling</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec euismod diam. Cras sed commodo ligula. Donec interdum urna quis ipsum tempor, vitae molestie purus condimentum. Curabitur enim ex, posuere sit amet lectus sit amet, vestibulum ullamcorper arcu. Aliquam et interdum arcu. Maecenas vulputate dapibus elementum. Vivamus porta congue aliquet. Nam vitae facilisis magna. Vivamus eget lectus quis turpis consequat condimentum. Quisque a fringilla libero, vitae aliquet ex. Nullam non ipsum ac ex porta auctor.</p>
+        </section>
+    </main>
+    <footer>Send your comments and questions to <a href="mailto:joelmartis@something.com">Joel Martis</a></footer>
 </body>
 </html>
